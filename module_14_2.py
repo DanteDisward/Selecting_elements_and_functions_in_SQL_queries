@@ -44,7 +44,7 @@ count_users = cursor.fetchone()[0]
 print(all_balance / count_users)
 
 # cursor.execute("SELECT SUM(balance) / COUNT(id) FROM Users")
-# print(cursor.fetchall()[0][0])
+# print(cursor.fetchone()[0])
 
 connection.commit()
 connection.close()
